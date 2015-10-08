@@ -1,0 +1,23 @@
+input[type="text"]{
+    width: 3em;
+}
+
+div.space {
+    border: thin solid black;
+}
+
+div.space:hover {
+    background-color: aqua;
+}
+
+div.space.everalive{
+    background-color: darksalmon;
+}
+
+div.space.alive {
+    background-color: greenyellow;
+}
+
+#game {
+    border: thin solid black;
+}

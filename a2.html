@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html><head>
+    <title>Conway's The Game of Life</title>
+    <link href="a2.css" rel="stylesheet" type="text/css">
+    <script type= "text/javascript" src= "jquery-1.11.3.js"></script>
+    <script type= "text/javascript" src="a2.js"></script>
+</head>
+
+<body>
+    <h1>Conway's The Game of Life</h1>
+    
+    <div id="controls">
+        <form id="control_form">
+          <label>Width: <input id="width" type="text" name="width" value="20"></label>
+          <label>Height: <input id="height" type="text" name="height" value="20"></label>
+          <button id="update_table">Update</button><br>
+          <label>Speed: <input id="speed" type="range" name="speed" min="0" max="1000" value="0"></label>
+          <label for="edgeCase">Edge Case: </label>
+          <select id="edgeCase" name="edgeCase"> 
+            <option value="Toroidal">Toroidal</option>
+            <option value="edgeAlive">Alive</option>
+            <option value="edgeDead">Dead</option>
+          </select>
+          <label for="radius">Radius: </label>
+          <select id="radius" name="radius">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="1">4</option>
+            <option value="2">5</option>
+            <option value="3">6</option>
+            <option value="1">7</option>
+            <option value="2">8</option>
+            <option value="3">9</option>
+            <option value="10">10</option>
+          </select><br>
+          <label>Lonliness Threshold: <input id="lonliness" type="text" name="lonliness" value="2"></label>
+          <label>Overpopulation Threshold: <input id="Overpopulation" type="text" name="Overpopulation" value="3"></label>
+          <label>Generation Min Threshold: <input id="GenMin" type="text" name="GenMin" value="3"></label>
+          <label>Generation Max Threshold: <input id="GenMax" type="text" name="GenMax" value="3"></label><br>
+          <button id="start_button">Start</button>
+          <button id="step_button">Step</button>
+          <button id="stop_button">Stop</button>
+          <button id="reset_button">Reset</button>
+          <button id="random_button">Randomize</button>
+        </form>
+    </div>
+        
+    <div id="game">
+    </div>    
+        
+    </body></html>
